@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+    
+}
+
+div{
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+}

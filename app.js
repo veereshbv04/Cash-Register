@@ -17,7 +17,13 @@ cashDiv.style.display="none";
 
 nextButton.addEventListener("click",(e) =>{
     e.preventDefault();
+
+    if(Number(billAmount.value) <=0){
+        showError("Enter valid details");
+        return;
+    }
     cashDiv.style.display="block";
+    nextButton.style.display="none";
 
 })
 
@@ -29,6 +35,8 @@ checkButton.addEventListener("click",(e) =>{
     clearNotesTable();
     hideShowerror();
 
+
+    console.log(typeof(billAmount.value));
     const bill = Number(billAmount.value);
     const cash = Number(cashGiven.value);
     console.log(bill);

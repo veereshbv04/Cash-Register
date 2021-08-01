@@ -1,10 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap');
+
+
 body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 2em;
+    background-color: coral;
     
 }
 
 .container{
+    margin: auto;
     display: flex;
     flex-direction: column;
     width: 50vw;
-   
+    background-color: blueviolet;
+    padding-left: 5em;
+   border-radius: 2em;
+   font-size: medium;
+    
+}
+
+
+input{
+    max-width: 50%;
+    height: 5vh;
+    border-radius: 2em;
+    font-size: large;
+}
+
+
+
+td{
+    border-width: 10em;
+    border-color: aqua;
+    background-color: aqua;
+}
+
+table{
+    padding-top: 2em;
+
+    border-width: 2em;
+    border-color: blue;
+    border-spacing: 2px;
+    padding-bottom: 2em;
+}
+
+td{
+    display: table-cell;
+    padding: 0.4em;
+
+}
+
+th{
+    display: table-cell;
+    font-weight: bold;
+    text-align: center;
+}
+
+caption{
+    font-weight: bold;
+    color: chartreuse;
+}
+
+button{
+    border-radius: 2em;
+    width: 6em;
+    background-color: rgb(102, 223, 47);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: bold;
+    margin: 2em;
+}
+
+#output-message{
+        font-size: large;
+        padding: 2em;
+        color: yellow;
+}
+
+th{
+    border-width: 10em;
+    border-color: aqua;
+    background-color: aqua;
 }

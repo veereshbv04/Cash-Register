@@ -6,10 +6,25 @@ const outDivMessage = document.querySelector("#output-message");
 const tableColumn = document.querySelectorAll(".no-of-notes");
 const wholeTable = document.querySelector(".change-table");
 
+const cashDiv = document.querySelector("#cash-div");
+const nextButton = document.querySelector("#nextButton");
+
 const notes = [2000, 500, 100, 20, 10, 5, 1]
 
+cashDiv.style.display="none";
+
+
+
+nextButton.addEventListener("click",(e) =>{
+    e.preventDefault();
+    cashDiv.style.display="block";
+
+})
+
+
+wholeTable.style.display="none";
 checkButton.addEventListener("click",(e) =>{
-    wholeTable.style.display="none";
+   
     e.preventDefault();
     clearNotesTable();
     hideShowerror();
